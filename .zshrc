@@ -41,7 +41,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 #funcations 
-func sbox(){
+func ibox(){
 	ssh -i ~/.ssh/mfg_root_id root@m-ibox$1
 	}
 	
