@@ -42,7 +42,7 @@ alias egrep='egrep --color=auto'
 
 #funcations 
 func sbox(){
-	ssh -i ~/.ssh/mfg_root_id/m-ibox$1
+	ssh -i ~/.ssh/mfg_root_id root@m-ibox$1
 	}
 	
 
