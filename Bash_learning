@@ -1,0 +1,41 @@
+#!/bin/bash
+
+echo -e "${BASH_SOURCE[0]}"
+basename "${BASH_SOURCE[0]}"
+
+echo -e "$@"
+SHORT="h"
+LONG="help"
+OPTS=`getopt -o $SHORT --long $LONG -n 'parse-options' -- "$@"`
+eval set -- "$OPTS"
+
+echo -e "$@"
+func(){
+   echo -e "number of args sent to the func: $#"
+   for(( i=1; $i<=$#; i++ ));do
+       echo -e "arg at postion (func) $i: ${!i}"
+   done    
+}
+
+
+echo -e "number of args sent to the script: $#"
+for(( i=1; $i<=$#; i++ ));do
+   echo -e "arg at postion $i: ${!i}"
+done
+
+func ZZZ XXX   
+
+
+
+
+
+exit
+POS=1
+while [[ $# -gt 0 ]];do
+   echo -e "arg at postion $POS:   "
+   let POS+=1
+   shift 2
+done
+
+                   $1  $2   $3
+dbg  hst  ibox2000  --
