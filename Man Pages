@@ -1,0 +1,9 @@
+#Coloring my Man Pages
+
+#Add to the .bashrc the
+
+#make sure the 'most' package is installed 
+
+
+#Coloring the MAN pages
+export PAGER=most
