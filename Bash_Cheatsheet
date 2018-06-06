@@ -5,3 +5,7 @@ Boolean expression
 "A || B" Run B if A failed
 "A &" Run A in background.
 
+echo "Script name: "$0 
+echo "The arguments are: " $@  
+echo "The number of arguments " $#
+
